@@ -48,6 +48,7 @@ describe("c-lesson-three", () => {
     expect(greeting.textContent).toBe(`Hello, !`); // assert
   });
 
+  
   it("should render the greeting with a name", () => {
     document.body.removeChild(document.body.firstChild); // remove the child appended at the before each phase
     component.name = nameProp; // populate the @api name property
@@ -55,6 +56,11 @@ describe("c-lesson-three", () => {
 
     const greeting = component.shadowRoot.querySelector("h1"); // select
     screen.debug()
+
+    /**
+     * @public
+     * :bangbang: BOOOOOOOOOM!
+     */
     expect(greeting.textContent).toBe(`Hello, ${nameProp}!`); // assert
   });
 });
