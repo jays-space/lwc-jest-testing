@@ -1,11 +1,3 @@
-/**
- * @public
- * #Lesson Three
- * ##Unit Testing
- * ---
- * In this lesson we introduce unit testing in earnest. We write a self contained module to test a component. We also delve deeper into writing assertions.
- */
-
 import { createElement } from "lwc";
 import LessonThree from "c/lessonThree";
 import { screen } from "@testing-library/dom";

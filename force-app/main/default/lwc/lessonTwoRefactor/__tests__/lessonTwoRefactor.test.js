@@ -40,7 +40,6 @@ describe("c-lesson-two-refactor", () => {
 
   selectors.forEach((selector) => {
     it(`selects the ${selector} element`, () => {
-      document.body.appendChild(component);
       const element = component.shadowRoot.querySelector(selector);
       screen.debug();
       expect(element).toBeTruthy(); //* The assertion here has not changed
